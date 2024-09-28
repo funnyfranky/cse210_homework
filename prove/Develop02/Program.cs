@@ -29,11 +29,15 @@ class Program
             }
             else if (userChoice == 3) // Load option
             {
-                workingJournal.ImportFromFile("myFile");
+                Console.Write("What file do you want to import? Ex. \"myFile\": ");
+                string importFileName = Console.ReadLine();
+                workingJournal.ImportFromFile(importFileName);
             }
             else if (userChoice == 4) // Save Option
             {
-                workingJournal.ExportToFile("myFile");
+                Console.Write("What do you want the file to be called? Ex. \"myFile\": ");
+                string exportFileName = Console.ReadLine();
+                workingJournal.ExportToFile(exportFileName);
             }
             else if (userChoice == 5) // Quit Option
             {
@@ -48,3 +52,5 @@ class Program
         } while (userChoice != -1);
     }
 }
+
+// I made the choices function so that the only way to quit the program is to choose quit option and then type an uppercase "Y" to more fully guarantee safe quitting. I also made it so there is no need to type a file extension as I automatically append ".txt" on the end of the chosen file name during both import and export to a file.
