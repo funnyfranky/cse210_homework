@@ -5,9 +5,9 @@ namespace Develop02;
 
 public class Journal
 {
-    public List<Journal_Entry> entryList = [];
-    public string dateCreated;
-    public string dateLastEntry;
+    public List<JournalEntry> _entryList = [];
+    // public string _dateCreated;
+    // public string _dateLastEntry;
 
     public Journal()
     {
@@ -17,13 +17,13 @@ public class Journal
     // Functions ex public void Display() {}
     public void NewJournalEntry(string date, string prompt, string journalText)
     {
-        // Create a Journal_Entry object with date, prompt and input text
-        entryList.Add(new(date, prompt, journalText));
+        // Create a JournalEntry object with date, prompt and input text
+        _entryList.Add(new(date, prompt, journalText));
 
     }
     public void DisplayAllEntries()
     {
-        foreach (Journal_Entry entry in entryList)
+        foreach (JournalEntry entry in _entryList)
         {
             entry.Display();
         }
@@ -33,7 +33,7 @@ public class Journal
         Console.WriteLine("Saving to file...");
         using (StreamWriter outputFile = new(fileName + ".txt"))
         {
-            foreach (Journal_Entry jEntry in entryList)
+            foreach (JournalEntry jEntry in _entryList)
             {
                 outputFile.WriteLine($"{jEntry._date}|||{jEntry._promptText}|||{jEntry._entryText}");
             }

@@ -17,7 +17,7 @@ class Program
             if (userChoice == 1) // Write option
             {
                 // Display a prompt
-                string prompt = getPrompt.generatePrompt();
+                string prompt = getPrompt.GeneratePrompt();
                 Console.WriteLine(prompt);
 
                 // Take in input and put in a variable
@@ -45,7 +45,6 @@ class Program
                 Console.WriteLine($"Sorry, {userChoice} isn't implemented yet. Please enter another number!\n\n");
                 userChoice = 0; // implements safe quitting only
             }
-
         } while (userChoice != -1);
     }
 }
