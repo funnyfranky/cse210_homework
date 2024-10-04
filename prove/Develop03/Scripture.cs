@@ -38,14 +38,16 @@ public class Scripture
     {
         Random rng = new Random();
         int count = 0;
-        do {
-            
-            int integer = rng.Next(0,_scripture.Count);
+        do
+        {
+
+            int integer = rng.Next(0, _scripture.Count);
             if (!_scripture[integer].IsHidden())
             {
-                count ++;
+                count++;
                 _scripture[integer].Hide();
-            } 
+                if (IsCompletelyHidden()) { break; }
+            }
         } while (count < numGone);
     }
     public bool IsCompletelyHidden()
