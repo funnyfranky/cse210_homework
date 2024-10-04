@@ -32,7 +32,7 @@ public class Word
             string tempReturnVal = "";
             for (int n = 0; n < _word.Length; n++)
             {
-                tempReturnVal = tempReturnVal + "_";
+                tempReturnVal += "_";
             }
             return tempReturnVal + " ";
         }

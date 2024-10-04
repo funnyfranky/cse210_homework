@@ -5,6 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Scripture scripture1 = new("Some Scripture", "Jesus Wept.");
         Scripture scripture1 = new("Proverbs 3:5-6", "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge Him and He shall direct thy paths.");
 
         Console.Clear();
