@@ -34,6 +34,7 @@ public class Order(Customer customer)
     // Prints a string for the packing label
     public void PrintPackingLabel()
     {
+        Console.WriteLine("Packing Label:");
         foreach (Product p in _product)
         {
             p.DisplayProductPrice();
@@ -44,6 +45,7 @@ public class Order(Customer customer)
     // Returns a string for the shipping label
     public void PrintShippingLabel()
     {
+        Console.WriteLine("Shipping Label:");
         Console.WriteLine(_customer.GetMailingAddress() + "\n");
     }
 
