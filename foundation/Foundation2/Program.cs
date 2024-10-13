@@ -14,7 +14,7 @@ class Program
         order1.PrintPackingLabel();
         order1.PrintShippingLabel();
 
-        Customer person2 = new("Yoshi","2 N Rain Road","","Calgary","CA");
+        Customer person2 = new("Yoshi","2 N Rain Road","Calgary","Alberta","CA");
         Order order2 = new(person2);
         order2.AddToOrder("TV",4,649.99,1);
         order2.AddToOrder("Graham Crackers",5,1.98,2);
