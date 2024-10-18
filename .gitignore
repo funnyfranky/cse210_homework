@@ -453,3 +453,5 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 prove/Develop02/myFile.txt
+.vscode/settings.json
+prove/Develop05/Team Files.zip
