@@ -20,9 +20,11 @@ class Program
                 new ReflectingActivity().Run();
             }
             else if (userChoice == 3)
-            { }
+            {
+                new ListingActivity().Run();
+            }
             else if (userChoice == 4)
-            { Console.WriteLine(); break; }
+            { Console.WriteLine(); keepGoing = 0; }
             else
             {
                 Console.WriteLine($"That didn't work. Good try though: {userChoice}"); 

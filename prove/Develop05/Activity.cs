@@ -22,6 +22,7 @@ public class Activity()
     }
     public void DisplayEndingMessage()
     {
+        Console.Clear();
         Console.WriteLine($"Well done!\n\nYou have completed {_duration} seconds of the {_name}.");
     }
     public void ShowSpinner(int seconds)
