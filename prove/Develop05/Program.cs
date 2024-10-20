@@ -11,6 +11,7 @@ class Program
             // MENU TO CHOOSE PROGRAM
             Console.Write("Menu Options:\n\t1. Start breathing activity\n\t2. Start reflecting activity\n\t3. Start listing activity\n\t4. Quit\nSelect a choice from the menu: ");
             int userChoice = int.Parse(Console.ReadLine());
+
             if (userChoice == 1)
             {
                 new BreathingActivity().Run();
@@ -29,8 +30,6 @@ class Program
             {
                 Console.WriteLine($"That didn't work. Good try though: {userChoice}"); 
             }
-            // have user input which program
-            // ask how long they want program to be
         }
     }
 }
