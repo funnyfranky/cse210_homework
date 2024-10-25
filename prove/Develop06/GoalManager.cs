@@ -1,6 +1,8 @@
 using System;
 
-class Program
+namespace Develop06;
+
+class GoalManager
 {
     static void Main(string[] args)
     {
