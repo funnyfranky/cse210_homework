@@ -157,7 +157,7 @@ public class GoalManager
         }
     }
 
-    private int NumChecker(string n)
+    private static int NumChecker(string n)
     {
         if (int.TryParse(n, out int x))
         {
