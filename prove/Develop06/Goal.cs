@@ -8,6 +8,7 @@ public abstract class Goal
     private string _description;
     private int _points;
 
+    public Goal() {}
     public Goal(string name, string description, int points)
     {
         _shortName = name;
